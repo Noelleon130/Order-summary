@@ -1,0 +1,98 @@
+* {
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+}
+.container {
+  width: 22rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.content {
+  background-color: white;
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bg-image img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.header-text {
+  margin: 15px;
+  font-size: 15px;
+}
+.order-text{
+  margin-bottom: 20px;
+  opacity: .7;
+}
+.annual-section {
+  display: flex;
+  background: hsl(225, 100%, 98%);
+  gap: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.annual-plan {
+  width: 90px;
+}
+.annual-plan p {
+  font-weight:600;
+  margin-left: -15px;
+}
+.annual-plan p span {
+  font-weight: normal;
+  opacity: 0.7;
+}
+button{
+  width: 100%;
+  padding: 10px;
+  background:hsl(245, 75%, 52%) ;
+  border: 0;
+  outline: 0;
+  border-radius:8px;
+  color: white;
+  box-shadow: 1px 15px 0px hsla(224, 23%, 55%, 0.062);
+  margin-bottom: 15px;
+}
+.payment-section{
+  width: 100%;
+}
+.cancel{
+  font-weight: 600;
+  opacity: .6;
+  margin: 10px;
+}
+button:hover{
+  opacity: .8;
+  cursor: pointer;
+}
+.cancel, a:hover{
+  cursor: pointer;
+}
+ @media (max-width:375px){
+  .container{
+    width: 90%;
+  }
+  body{
+    height: 100%;
+  }
+ }
